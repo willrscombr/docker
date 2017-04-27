@@ -1,5 +1,5 @@
 # Faz o dawnload do script na url mencinada e executa via sh
-#wget -qO- https://get.docker.com/ | sh
+wget -qO- https://get.docker.com/ | sh
 # Executa um container de testes
 docker container run hello-world&
 # Faz o download do docker-compose
