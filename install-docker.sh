@@ -8,3 +8,5 @@ curl -L https://github.com/docker/compose/releases/download/1.12.0/docker-compos
 chmod +x /usr/local/bin/docker-compose
 # Verifica versão
 docker-compose version
+# Permite executar o docker sem ser root
+usermod -aG docker $(whoami)
