@@ -11,6 +11,6 @@ docker-compose version
 # Permite executar o docker sem ser root
 usermod -aG docker $(whoami)
 # Habilita modo experimental do docker deploy -c
-echo '{"experimental":true}' > /etc/docker/daemon.json
+echo DOCKER_OPTS="--experimental=true" >> /etc/docker/daemon.json
 # Restart docker  
 systemctl restart docker
